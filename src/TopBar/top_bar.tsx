@@ -8,7 +8,6 @@ function Header() {
 			<nav.Function>
 				<nav.Login>Login</nav.Login>
 				<nav.Content>About Me</nav.Content>
-				<nav.Content>Resume</nav.Content>
 				<nav.Content>Skills</nav.Content>
 				<nav.Content>Project</nav.Content>
 				<nav.Content>Study</nav.Content>

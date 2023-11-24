@@ -8,7 +8,7 @@ import { FaGithubSquare } from "react-icons/fa";
 function Home() {
 	return (
 		<M.MainContainer>
-			<M.Contact>은정이 얼굴</M.Contact>
+			<M.BackgroundImg src="profile/background.jpg" />
 			<M.Contact>
 				<M.ContactTitle>Contact Me</M.ContactTitle>
 				<M.ContactContent>
