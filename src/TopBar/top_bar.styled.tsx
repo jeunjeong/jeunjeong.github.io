@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
 export const TopBar = styled.div`
-	margin: 1rem;
-	margin-right: 1rem;
 	display: flex;
 	justify-content: space-between;
-	background-color: #e8ede7;
+	background-color: #f4f4f2;
 	border-bottom: 2px solid #012e4a;
 	color: #012e4a;
 	position: fixed;
-	width: 98%;
+	width: 99%;
 	z-index: 10;
 `;
 

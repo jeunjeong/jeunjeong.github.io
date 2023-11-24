@@ -6,6 +6,12 @@ export const MainContainer = styled.div`
 	justify-content: space-around;
 	align-items: center;
 	height: 940px;
+	background-color: #f4f4f2;
+`;
+
+export const BackgroundImg = styled.img`
+	text-align: center;
+	height: 900px;
 `;
 
 export const Contact = styled.div`
