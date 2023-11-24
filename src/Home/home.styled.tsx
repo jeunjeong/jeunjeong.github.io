@@ -39,7 +39,10 @@ export const ContactContent = styled.div`
 `;
 
 export const ContactContentInner = styled.div`
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	@media (min-width: 768px) {
+		font-size: 1.5rem;
+	}
 `;
 
 export const StyledLink = styled(Link)`

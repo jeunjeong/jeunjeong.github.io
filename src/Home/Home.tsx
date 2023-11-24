@@ -30,11 +30,7 @@ function Home() {
 						<FaInstagramSquare />
 						&nbsp;Instagram&nbsp;
 					</M.ContactContentInner>
-					<M.ContactContentInner>
-						<M.StyledLink to="https://github.com/jeunjeong">
-							_e_jjeongs
-						</M.StyledLink>
-					</M.ContactContentInner>
+					<M.ContactContentInner>_e_jjeongs</M.ContactContentInner>
 				</M.ContactContent>
 				<M.StyledLink to="https://github.com/jeunjeong">
 					<M.ContactContent>
