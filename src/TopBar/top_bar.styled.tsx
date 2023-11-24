@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const TopBar = styled.div`
-	display: flex;
 	justify-content: space-between;
 	background-color: #f4f4f2;
 	border-bottom: 2px solid #012e4a;
@@ -9,6 +8,9 @@ export const TopBar = styled.div`
 	position: fixed;
 	width: 99%;
 	z-index: 10;
+	@media (min-width: 768px) {
+		display: flex;
+	}
 `;
 
 export const Title = styled.div`
@@ -24,10 +26,11 @@ export const Function = styled.div`
 
 export const Content = styled.div`
 	font-size: 1.2rem;
-	margin-right: 2.5rem;
+	margin-right: 2rem;
 `;
 
 export const Login = styled.div`
 	font-size: 1rem;
-	margin-right: 2.5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 `;

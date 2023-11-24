@@ -2,16 +2,24 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const MainContainer = styled.div`
-	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 940px;
+	width: 100%;
 	background-color: #f4f4f2;
+
+	@media (min-width: 768px) {
+		display: flex;
+	}
 `;
 
 export const BackgroundImg = styled.img`
 	text-align: center;
-	height: 900px;
+	width: 80%;
+	margin-bottom: 1rem;
+	@media (min-width: 768px) {
+		display: flex;
+		width: 40%;
+	}
 `;
 
 export const Contact = styled.div`
