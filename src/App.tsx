@@ -1,8 +1,15 @@
-import React from "react";
 import "./App.css";
-
+import { Routes, Route } from "react-router-dom";
+import Header from "./TopBar/top_bar";
+import Home from "./Home/Home";
 function App() {
-	return <div>HI</div>;
+	return (
+		<div>
+			<Routes>
+				<Route path="/" element={[<Header />, <Home />]} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
