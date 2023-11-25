@@ -2,18 +2,19 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const MainContainer = styled.div`
-	justify-content: space-around;
-	align-items: center;
+	text-align:center;
 	width: 100%;
 	background-color: #f4f4f2;
 	@media (min-width: 768px) {
 		display: flex;
+		justify-content: space-around;
+		align-items: center;
 	}
 	border-bottom : 1px solid lightgray;
+	padding-top : 6rem;
 `;
 
 export const BackgroundImg = styled.img`
-	text-align: center;
 	width: 80%;
 	margin-bottom: 1rem;
 	@media (min-width: 768px) {
@@ -23,7 +24,7 @@ export const BackgroundImg = styled.img`
 `;
 
 export const Contact = styled.div`
-	text-align: center;
+
 `;
 
 export const ContactTitle = styled.div`
@@ -33,10 +34,11 @@ export const ContactTitle = styled.div`
 
 export const ContactContent = styled.div`
 	display: flex;
-	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.5rem;	
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	justify-content: center;
+	align-items:center;
 `;
 
 export const ContactContentInner = styled.div`
