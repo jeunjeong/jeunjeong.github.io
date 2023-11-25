@@ -6,7 +6,6 @@ function Header() {
 		<nav.TopBar>
 			<nav.Title>은정이의 성장일기</nav.Title>
 			<nav.Function>
-				<nav.Login>Login</nav.Login>
 				<nav.Content>About Me</nav.Content>
 				<nav.Content>Skills</nav.Content>
 				<nav.Content>Project</nav.Content>
