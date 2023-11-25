@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import * as about from "./about_me.styled";
 import { BsPersonFill } from "react-icons/bs";
 import { FaCalendar } from "react-icons/fa";
@@ -8,20 +8,13 @@ import { PiCertificateFill } from "react-icons/pi";
 import Progress from "./progress_bar";
 
 function AboutMe() {
-	const [progressPercent, setProgressPercent] = useState<number>(30);
-	useEffect(() => {}, [progressPercent]);
-	const handleButtonClick = () => {
-		setProgressPercent(30);
-	};
-
 	return (
 		<about.MainContainer>
 			<about.Title>About Me</about.Title>
 			<about.Content>
-				<about.Section1>
+				<about.Section>
 					<about.ProfileImg src="profile/profile.jpg" />
 
-					<about.ProfileInfoDiv>
 						<about.ProfileInfo>
 							<BsPersonFill />
 							&nbsp;이름 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;조은정 (Jo Eun Jeong)
@@ -34,9 +27,8 @@ function AboutMe() {
 							<GiPositionMarker />
 							&nbsp;주소 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;부산광역시 강서구
 						</about.ProfileInfo>
-					</about.ProfileInfoDiv>
-				</about.Section1>
-				<about.Section2>
+				</about.Section>
+				<about.Section>
 					<about.ProfileTitle>Education</about.ProfileTitle>
 					<about.ProfileContent>
 						<IoMdSchool /> 2014.03 ~ 2017.02 성일여자고등학교
@@ -54,10 +46,10 @@ function AboutMe() {
 					<about.ProfileContent>
 						&nbsp; &nbsp; - 드론 실시간 충돌회피 알고리즘 연구프로그램
 					</about.ProfileContent>
-				</about.Section2>
-				<about.Section3>
+				</about.Section>
+				<about.Section>
 					<about.ProfileTitle>Who Am I?</about.ProfileTitle>
-					<about.ProfileContent>
+					<about.ProfileContent >
 						- 긍 &nbsp; 정
 						<Progress progressPercent={80} />
 						80%
@@ -77,7 +69,7 @@ function AboutMe() {
 						<Progress progressPercent={95} />
 						95%
 					</about.ProfileContent>
-				</about.Section3>
+				</about.Section>
 			</about.Content>
 		</about.MainContainer>
 	);

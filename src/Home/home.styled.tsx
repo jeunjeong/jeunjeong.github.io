@@ -6,10 +6,10 @@ export const MainContainer = styled.div`
 	align-items: center;
 	width: 100%;
 	background-color: #f4f4f2;
-
 	@media (min-width: 768px) {
 		display: flex;
 	}
+	border-bottom : 1px solid lightgray;
 `;
 
 export const BackgroundImg = styled.img`
@@ -27,7 +27,8 @@ export const Contact = styled.div`
 `;
 
 export const ContactTitle = styled.div`
-	font-size: 3rem;
+	font-size: 2.5rem;
+	font-weight:bold;
 `;
 
 export const ContactContent = styled.div`

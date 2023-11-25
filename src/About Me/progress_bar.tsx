@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 const ProgressWrap = styled.div`
 	background: pink;
-	margin: 5px 10px;
+	margin: 0px 5px;
 	overflow: hidden;
 	position: relative;
 	width: 60%;
-	height: 20px;
+	height: 15px;
 	border-radius: 10px;
 
 	@media (min-width: 1200px) {
