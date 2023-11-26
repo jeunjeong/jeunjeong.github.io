@@ -5,9 +5,13 @@ import { ImMail } from "react-icons/im";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 
-function Home() {
+interface Props {
+	id:string;
+}
+
+const Home:React.FC<Props> =({id})=> {
 	return (
-		<M.MainContainer>
+		<M.MainContainer id={id}>
 			<M.BackgroundImg src="profile/background.jpg" />
 			<M.Contact>
 				<M.ContactTitle>Contact Me</M.ContactTitle>

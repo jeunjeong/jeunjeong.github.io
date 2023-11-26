@@ -7,9 +7,13 @@ import { IoMdSchool } from "react-icons/io";
 import { PiCertificateFill } from "react-icons/pi";
 import Progress from "./progress_bar";
 
-function AboutMe() {
+interface Props {
+	id : string;
+}
+
+const AboutMe:React.FC<Props>=({id})=> {
 	return (
-		<about.MainContainer>
+		<about.MainContainer id={id}>
 			<about.Title>About Me</about.Title>
 			<about.Content>
 				<about.Section>

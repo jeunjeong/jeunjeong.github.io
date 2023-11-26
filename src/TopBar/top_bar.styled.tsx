@@ -31,6 +31,7 @@ export const Content = styled.div`
 	font-size: 1.2rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	cursor:pointer;
 	@media (max-width: 768px) {
 		font-size: 0.8rem;
 		font-weight:bold;

@@ -1,8 +1,12 @@
 import React from "react";
 import * as skills from "./skills.styled";
 
-function Skills() {
-	return <skills.MainContainer>
+interface Props {
+	id : string;
+}
+
+const Skills:React.FC<Props>=({id})=> {
+	return <skills.MainContainer id={id}>
 		<skills.Title>Skills</skills.Title>
 		<skills.Content>
 			<skills.Section>
