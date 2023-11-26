@@ -9,6 +9,7 @@ export const MainContainer = styled.div`
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		padding-top : 5rem;
 	}
 	border-bottom : 1px solid lightgray;
 	padding-top : 6rem;

@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
     background-color: #f4f4f2;
-	padding-top: 1rem;
+	padding-top: 6rem;
 	text-align: center;
-    order-bottom : 1px solid lightgray;
+    border-bottom : 1px solid lightgray;
     `;
 
 export const Title = styled.div`
@@ -16,7 +16,6 @@ export const Title = styled.div`
 export const Content = styled.div`
 	font-size: 1.5rem;
 	margin-top: 1rem;
-	margin-bottom:2em;
 	
 	@media (min-width: 768px) {
 		display: flex;
@@ -27,7 +26,7 @@ export const Section = styled.div`
 	flex: 1;
 	margin-left:1rem;
 	margin-right:1rem;
-	margin-bottom: 1.5rem;    
+	margin-bottom: 1rem;    
 `;
 
 export const Card = styled.div`

@@ -3,6 +3,10 @@ import * as skills from "./project.styled";
 import Carousel from './carousel';
 import Card from './card';
 
+interface Props {
+	id : string;
+}
+
 const CARDS = 3;
 const cardContents = [
 	{
@@ -23,8 +27,8 @@ const cardContents = [
   ];
   
   
-function Project() {
-	return <skills.MainContainer>
+const Project:React.FC<Props>=({id}) =>{
+	return <skills.MainContainer id = {id}>
 		<skills.Title>Project</skills.Title>
 		<skills.Content>
 		<Carousel>
