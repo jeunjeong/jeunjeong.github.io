@@ -81,7 +81,7 @@ export const ButtonDiv = styled.div`
 	justify-content: center;
 `;
 export const CardButton = styled.button`
-	width: 100%;
+	width: 8rem;
 	height: 3rem;
 	background-color: #f6f693;
 	border: none;

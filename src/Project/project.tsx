@@ -9,7 +9,6 @@ interface Props {
 	id: string;
 }
 
-const CARDS = 3;
 const cardContents = [
 	{
 		title: "익명으로 전하지 못했던 진심을 전달해 보세요, 별이삼샵",
@@ -95,9 +94,10 @@ const cardContents = [
 		review: [[], [], []],
 	},
 ];
+
 const PrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
 	<TiChevronLeftOutline
-		onClick={onClick}
+		onClick={() => console.log("clicked")}
 		style={{
 			fontSize: "2rem",
 			color: "black",
