@@ -19,7 +19,7 @@ export const Content = styled.div`
 	display: flex;
 	justify-content: center;
 	margin-bottom: 3rem;
-
-	height: 100%; /* 부모(MainContainer)의 높이에 맞게 설정 */
+	margin-top: 1rem;
+	height: 80vh;
 	align-items: center; /* 세로 중앙 정렬을 위해 추가 */
 `;

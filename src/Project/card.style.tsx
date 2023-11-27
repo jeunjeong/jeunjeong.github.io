@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
 
   width: 80%;
+  height: 70vh;
   margin: 0 auto; /* 수평 중앙 정렬을 위한 추가 */
   padding: 2rem;
   background-color : white;
@@ -11,7 +12,9 @@ export const CardContainer = styled.div`
   color: #9CA3AF;
   text-align: justify;
   transition: all 0.3s ease-out;
+  
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  
 }
 `;
 
@@ -84,6 +87,8 @@ export const CardButton = styled.button`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	cursor: pointer;
 `;
 
 export const CardButtonDiv = styled.div`
@@ -94,4 +99,35 @@ export const Atag = styled.a`
 	text-decoration: none; /* 링크 밑줄 제거 */
 	color: inherit; /* 기본 텍스트 색상으로 상속 */
 	font-weight: normal; /* 기본 폰트 굵기로 설정 */
+`;
+const CardFace = styled.div`
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+`;
+
+export const CardBack = styled(CardFace)`
+	transform: rotateY(180deg);
+`;
+
+export const CardFront = styled(CardFace)``;
+
+export const CardFlip = styled.div<{ isFlipped: boolean }>`
+	width: 100%;
+	transition: transform 2s;
+	transform-style: preserve-3d;
+	position: relative;
+	transform: ${({ isFlipped }) => (isFlipped ? "rotateY(180deg)" : "none")};
+`;
+
+export const Scene = styled.div`
+	width: 100%;
+	height: 80vh;
+	perspective: 20000px;
 `;
