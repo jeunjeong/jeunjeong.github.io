@@ -117,7 +117,7 @@ const cardContents = [
 
 const PrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
 	<TiChevronLeftOutline
-		onClick={() => console.log("clicked")}
+		onClick={onClick}
 		style={{
 			fontSize: "2rem",
 			color: "black",
@@ -126,6 +126,7 @@ const PrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
 			left: "10px",
 			transform: "translateY(-50%)",
 			cursor: "pointer",
+			zIndex: "2",
 		}}
 	/>
 );
@@ -142,6 +143,7 @@ const NextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
 			right: "10px",
 			transform: "translateY(-50%)",
 			cursor: "pointer",
+			zIndex: "2",
 		}}
 	/>
 );
@@ -152,8 +154,8 @@ const Project: React.FC<Props> = ({ id }) => {
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,
+		nextArrow: <NextArrow />,
 	};
 	return (
 		<project.MainContainer id={id}>
