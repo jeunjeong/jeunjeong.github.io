@@ -19,7 +19,6 @@ export const CardTitle = styled.div`
 	text-align: center;
 	font-size: 2rem;
 	font-weight: bold;
-	margin: 0 0 0.7em;
 	color: #1f2937;
 
 	transition: all 0.3s ease-out;
@@ -32,34 +31,28 @@ export const CardTitle = styled.div`
 `;
 
 export const CardSection = styled.div`
-	@media (min-width: 768px) {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		padding-top: 5rem;
-	}
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 `;
+
 export const CardImg = styled.img`
+	object-fit: contain;
 	flex: 1;
 	height: 33rem; /* 이미지의 높이를 33rem으로 고정합니다. */
-	margin: 1rem;
+	width: 90%;
 `;
 
 export const CardInner = styled.div`
 	flex: 1;
 	margin: 1rem;
-
-	@media (max-width: 768px) {
-		transition: all 0.3s ease-out;
-		opacity: var(--active);
-	}
 `;
 
 export const CardMiddleTitle = styled.div`
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: black;
-	margin-top: 0.5rem;
+	margin-top: 1.5rem;
 	margin-bottom: 0.5rem;
 `;
 
@@ -78,10 +71,10 @@ export const CardInnerText = styled.li`
 export const ButtonDiv = styled.div`
 	bottom: 1rem;
 	display: flex;
-	justify-content: center;
+	justify-content: end;
 `;
 export const CardButton = styled.button`
-	width: 8rem;
+	width: 6rem;
 	height: 3rem;
 	background-color: #f6f693;
 	border: none;
