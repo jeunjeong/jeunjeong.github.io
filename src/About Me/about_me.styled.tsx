@@ -1,56 +1,52 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-	background-color: #bbbfca;
-	align-items: center;
-	padding-top: 2rem;
-	height: 700px;
+	background-color: #f4f4f2;
+	padding-top: 6rem;
 	text-align: center;
+	border-bottom : 1px solid lightgray;
 `;
 
 export const Title = styled.div`
-	font-size: 5rem;
+	font-size: 3rem;
+	font-weight : bold;
 	margin-bottom: 3rem;
-`;
+`
 
 export const Content = styled.div`
-	display: flex;
 	font-size: 1.5rem;
 	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom:2em;
+	
+	@media (min-width: 768px) {
+		display: flex;
+	}
 `;
 
-export const Section1 = styled.div`
-	width: 500px;
-	margin-left: 8rem;
+export const Section = styled.div`
+	
+	flex: 1;
+	margin-left:1rem;
+	margin-right:1rem;
+	margin-bottom: 2rem;
 `;
 
-export const Section2 = styled.div`
-	margin-reft: 1rem;
-	margin-right: 1rem;
-
-	width: 500px;
-`;
-export const Section3 = styled.div`
-	margin-reft: 1rem;
-	margin-right: 1rem;
-	width: 500px;
-`;
 export const ProfileImg = styled.img`
 	height: 18rem;
 `;
 
-export const ProfileInfoDiv = styled.div`
-	margin-left: 100px;
-	text-align: left;
-`;
 export const ProfileInfo = styled.div`
 	margin-top: 0.6rem;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
+
+	@media (min-width: 1200px) {
+		margin-left: 100px;
+		display: flex;
+		font-size: 1.3rem;
+	}
 `;
 
 export const ProfileTitle = styled.div`
-	margin-top: 1rem;
 	padding-left: 1rem;
 	text-align: left;
 	font-size: 1.6rem;
@@ -63,5 +59,11 @@ export const ProfileContent = styled.div`
 	padding-bottom: 0.5rem;
 	padding-left: 1rem;
 	text-align: left;
-	font-size: 1.3rem;
+	font-size: 1rem;
+
+
+	@media (min-width: 1200px) {
+		display: flex;
+		font-size: 1.3rem;
+	}
 `;
