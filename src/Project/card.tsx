@@ -68,24 +68,25 @@ const Card: FC<CardProps> = ({
 											<CardInnerText>{roll}</CardInnerText>
 										</CardInnerUl>
 									))}
-									<ButtonDiv>
-										<Atag href={github}>
-											<CardButton>
-												<CardButtonDiv>Go to Github&nbsp;</CardButtonDiv>
-												<IoIosArrowDroprightCircle />
-											</CardButton>
-										</Atag>
-
-										<CardButton
-											className={isFlipped ? "is-flipped" : ""}
-											onClick={handleCardClick}
-										>
-											<CardButtonDiv>Go to Review &nbsp;</CardButtonDiv>
-											<IoIosArrowDroprightCircle />
-										</CardButton>
-									</ButtonDiv>
 								</CardInner>
 							</CardSection>
+
+							<ButtonDiv>
+								<Atag href={github}>
+									<CardButton>
+										<CardButtonDiv>Go to Github&nbsp;</CardButtonDiv>
+										<IoIosArrowDroprightCircle />
+									</CardButton>
+								</Atag>
+
+								<CardButton
+									className={isFlipped ? "is-flipped" : ""}
+									onClick={handleCardClick}
+								>
+									<CardButtonDiv>Go to Review &nbsp;</CardButtonDiv>
+									<IoIosArrowDroprightCircle />
+								</CardButton>
+							</ButtonDiv>
 						</CardContainer>
 					</CardFront>
 					<CardBack>
@@ -97,27 +98,29 @@ const Card: FC<CardProps> = ({
 									{review[0].map((paragraphs, i) => (
 										<CardInnerText>{paragraphs}</CardInnerText>
 									))}
-
 									<CardMiddleTitle>Problem</CardMiddleTitle>
+
 									{review[1].map((paragraphs, i) => (
 										<CardInnerText>{paragraphs}</CardInnerText>
 									))}
 									<CardMiddleTitle>Try</CardMiddleTitle>
-									{review[2].map((paragraphs, i) => (
-										<CardInnerText>{paragraphs}</CardInnerText>
-									))}
 
-									<ButtonDiv>
-										<CardButton
-											className={isFlipped ? "is-flipped" : ""}
-											onClick={handleCardClick}
-										>
-											<CardButtonDiv>Go to Project &nbsp;</CardButtonDiv>
-											<IoIosArrowDroprightCircle />
-										</CardButton>
-									</ButtonDiv>
+									<CardInnerUl>
+										{review[2].map((paragraphs, i) => (
+											<CardInnerText>{paragraphs}</CardInnerText>
+										))}
+									</CardInnerUl>
 								</CardInner>
 							</CardSection>
+							<ButtonDiv>
+								<CardButton
+									className={isFlipped ? "is-flipped" : ""}
+									onClick={handleCardClick}
+								>
+									<CardButtonDiv>Go to Project &nbsp;</CardButtonDiv>
+									<IoIosArrowDroprightCircle />
+								</CardButton>
+							</ButtonDiv>
 						</CardContainer>
 					</CardBack>
 				</CardFlip>

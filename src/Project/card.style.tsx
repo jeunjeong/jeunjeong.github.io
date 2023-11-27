@@ -12,7 +12,12 @@ export const CardContainer = styled.div`
   color: #9CA3AF;
   text-align: justify;
   transition: all 0.3s ease-out;
-  
+	@media (max-width: 768px) {
+		overflow-y:scroll;
+		&::-webkit-scrollbar {
+		  display: none;
+		}
+	}
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   
 }
@@ -26,17 +31,20 @@ export const CardTitle = styled.div`
 
 	transition: all 0.3s ease-out;
 	opacity: var(--active);
-
-	@media (max-width: 768px) {
-		transition: all 0.3s ease-out;
-		opacity: var(--active);
-	}
 `;
 
 export const CardSection = styled.div`
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	@media (max-width: 768px) {
+		transition: all 0.3s ease-out;
+		opacity: var(--active);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
 `;
 
 export const CardImg = styled.img`
