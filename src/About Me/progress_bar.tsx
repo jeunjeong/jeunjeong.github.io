@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 const ProgressWrap = styled.div`
-	background: pink;
+	background: #f7db93;
 	margin: 0px 5px;
 	overflow: hidden;
 	position: relative;
@@ -16,7 +16,8 @@ const ProgressWrap = styled.div`
 `;
 
 const ProgressBar = styled.div`
-	background-color: navy;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	background-color: #f69393;
 	left: 0;
 	position: absolute;
 	top: 0;
